@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لينا وحدنا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="login">
+  <div class="box">
+    <div class="heart" aria-hidden="true">♥</div>
+    <h1 id="lt">أهلاً بحبيبة قلبي</h1>
+    <p class="sub" id="ls">الباب ده مفتوح ليكي إنتي بس، اكتبي اسمك الحلو وادخلي لعالمنا.</p>
+    <input id="u" type="text" placeholder="اسمك يا أجمل حاجة" autocomplete="name" aria-label="اسمك">
+    <input id="p" type="password" placeholder="كلمة السر اللي بينا" autocomplete="current-password" aria-label="كلمة السر">
+    <button class="go" id="enter">ادخلي يا قلبي</button>
+    <p id="err" role="alert"></p>
+  </div>
+</section>
+
+<main id="site" class="hidden">
+  <div class="wrap">
+    <header class="hero">
+      <h2>ضحي، إنتِ حكايتي الحلوة</h2>
+      <p id="hs">كل صورة هنا لحظة حلوة معاكي، وكل كلمة جاية من قلبي.</p>
+    </header>
+
+    <section class="gallery" id="gallery" aria-label="صورنا"></section>
+
+    <article class="letter">
+      <h3 id="lh"></h3>
+      <div id="lp"></div>
+      <div class="sign" id="lsg"></div>
+    </article>
+
+    <button class="out" id="logout">تسجيل الخروج</button>
+  </div>
+</main>
+
+<div id="lb" class="hidden" role="dialog" aria-label="عرض الصورة"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
